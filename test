@@ -1,0 +1,4 @@
+class GPIORocketConfig extends Config(
+  new chipyard.config.WithGPIO ++                           // add GPIOs to the peripherybus
+  new freechips.rocketchip.subsystem.WithNBigCores(1) ++
+  new chipyard.config.AbstractConfig)
